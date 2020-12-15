@@ -1,15 +1,15 @@
 async function LoadOpinions() {
-    var template = await fetch(`https://raw.githubusercontent.com/anko000/course/master/templayed/opition.template.html`)
+    var template = await fetch(`https://raw.githubusercontent.com/anko000/course/master/templayed/opition.template.html`, )
         .then(response => response.text());
 
 
-    var xmlData = await fetch(`https://raw.githubusercontent.com/anko000/course/master/templayed/opinion.data`)
+    var xmlData = await fetch(`https://raw.githubusercontent.com/anko000/course/master/templayed/opinion.data`, {cache: "no-cache"})
         .then(response => response.text())
         .then(text => new DOMParser().parseFromString(text, "text/xml"));
 
-
+    //alert(xmlData.getElementsByTagName("opinion").length);
     var variables = {
-        opinions: xmlData.getElementsByTagName("opinions"),
+        opinions: xmlData.getElementsByTagName("opinion"),
         imgSource: function () {
             return "this.getElementsByTagName('imgSource')[0].childNodes[0].nodeValue";
         },
