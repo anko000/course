@@ -489,3 +489,18 @@ body {
 }
 
 /* Подвал сайта */
+footer {
+    color: rgb(196, 196, 196);
+    background: #463224;
+    padding: 17px 0 18px 0;
+    border-top: 1px solid #463224;
+    text-align: center;
+    width: 100%;
+    font-size: 17px;
+  }
+  footer a {
+    color: rgb(226, 226, 226);
+  }
+  footer a:hover {
+    color: #efefef;
+  }
