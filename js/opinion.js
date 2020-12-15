@@ -1,5 +1,5 @@
 async function LoadOpinions() {
-    var template = await fetch(`https://raw.githubusercontent.com/anko000/course/master/templayed/opition.template.html`, )
+    var template = await fetch(`https://raw.githubusercontent.com/anko000/course/master/templayed/opition.template.html`, {cache: "no-cache"} )
         .then(response => response.text());
 
 
