@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script src="index.js" ></script>
+    <script>
+        $(document).ready(function() {
+            //Скрыть PopUp при загрузке страницы
+            PopUpHide();
+            Calc();
+        });
+        $(window).resize(function() {
+            Calc();
+
+        });
+        $(window).load(function() {
+            Calc();
+           
+
+        });
+        //Функция отображения PopUp
+        function PopUpShow() {
+            $("#popup1").show();
+        }
+        //Функция скрытия PopUp
+        function PopUpHide() {
+            $("#popup1").hide();
+        }
+
+        function Calc() {
+            var containerHeight = $(window).height() - $("#nav").first().outerHeight();
+            $(".containerfortext").first().height(containerHeight);
+            $("#containerfortextinner").first().height(containerHeight);
+            var heightText = $("#centerText").height();
+            var margin = (containerHeight - heightText) / 2;
+            $("#centerText").css("margin-top", margin);
+            $("#centerText").css("margin-bottom", margin);
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="background">
+        <nav role="navigation" class="nav" id="nav">
+            <a class="menu-toggle" href="#head-nav">
+                <span aria-hidden="true" class="icon-menu"></span><span class="menu-toggle-text">Меню</span>
+            </a>
+            <ul id="main-menu" class="top-nav menu clearfix">
+                <li class="menu-item">
+                    <a href="dessert.html">Наша продукция</a>
+                </li>
+                <li class="menu-item">
+                    <a href="establishments.html">Заведения</a>
+                </li>
+                <li class="menu-item">
+                    <a href="delivery.html">Доставка и оплата</a>
+                </li>
+                <li class="menu-item">
+                    <a href="opinion.html">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="containerfortext">
+            <div style="width:100%" id="containerfortextinner">
+
+                <div class="text" id="centerText">
+                    <div class="logo1">
+                        <a href="index.html">
+                            <image src="images/логотип.jpg" width="190px" />
+                        </a>
+                    </div>
+
+                    <p id="tit">Кусочек счастья</p>
+                    <p class="info">
+
+                        Вначале чуть слышный хруст, затем сахарный взрыв,<br> осколки которого оседают в уголках губ, в то время как сладкий <br> вкус начинки уже растекается во рту…
+                    </p>
+
+
+                    <div class="b-container">
+
+                        <a href="javascript:PopUpShow()">Заказать торт</a>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="b-popup" id="popup1" style="display: none;  ">
+            <div class="b-popup-content">
+
+                <a href="javascript:PopUpHide()"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <form class="" action="#" method="post">
+                    <div class="inputtext">
+                        <input type="text" name="" placeholder="Имя" title="Имя">
+                        <input type="text" name="" placeholder="Телефон" title="Телефон">
+                        <input type="text" name="" placeholder="Почта">
+
+                    </div>
+
+
+                    <textarea name="name" rows="3" placeholder="Напишите ваши пожелания" cols="20"></textarea>
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

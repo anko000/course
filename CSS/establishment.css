@@ -1,0 +1,109 @@
+@font-face{
+    font-family:Title;
+    src:url(../fonts/17891.otf);
+}
+.establish{
+  display: inline-block;
+  height: 500px;
+  width: 320px;
+  background: #7c7c7c;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+   
+transition: all 0.3s ease;
+    
+    
+}
+.establish .mask{
+    
+    display: none;
+   
+    
+}
+
+.establish:hover> .mask{
+    display: block;
+     height: 100%;
+    background: rgba( 51, 51, 51, 0.58 );
+    text-align: right;
+   
+}
+.establish:hover .mask div{
+    padding: 15px;
+    padding-top: 400px;
+    color:white;
+    font-family: 'Federiko' ;
+    font-size: 16px;
+}
+.establish:hover {
+    
+   
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+    
+}
+.establishparent{
+  text-align: center;
+}
+.establishparent:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.map{
+  width: auto;
+  margin-top: 10%;
+}
+
+.titleest {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Title';
+
+}
+
+#d1{
+  background-image: url(../images/dizajn-konditerskoj-7.jpg);
+  background-size: cover;
+    
+}
+#d2{
+  background-image: url(../images/dizajn-konditerskoj-14-1136x690.jpg);
+  background-size: cover;
+}
+#d3{
+  background-image: url(../images/nfdfjpaz4qdg4i3kn17y.jpg);
+  background-size: cover;
+}
+
+/**/
+footer {
+    color: rgb(196, 196, 196);
+    background: #463224;
+    padding: 17px 0 18px 0;
+    border-top: 1px solid #463224;
+    text-align: center;
+    width: 100%;
+    font-size: 17px;
+  }
+  footer a {
+    color: rgb(226, 226, 226);
+  }
+  footer a:hover {
+    color: #efefef;
+  }
+  
+  @media (max-width: 767px) {
+  
+    footer  {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  

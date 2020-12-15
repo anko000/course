@@ -1,0 +1,31 @@
+@font-face{
+    font-family:Title;
+    src:url(../fonts/17891.otf);
+}
+.inform{
+  display: inline-block;
+  height: 500px;
+  width: 70%;
+  background: #7c7c7c;
+ text-align: justify;
+  vertical-align: middle;
+  margin-top: 5%;
+
+}
+.container{
+  text-align: center;
+}
+.container:before{
+
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+#bottommenu{
+  margin-top: 45px;
+}
+.titleest {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Title';
