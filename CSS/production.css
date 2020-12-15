@@ -1,57 +1,69 @@
 
-.product{
-  display: inline-block;
-  height: 400px;
-  width: 500px;
-  background: #7c7c7c;
-  text-align: center;
-  vertical-align: middle;
-  margin-top: 5%;
-  margin-left: 3%;
-  margin-right: 3%;
+.product {
+    display: inline-block;
+    height: 400px;
+    width: 500px;
+    background: #7c7c7c;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
-.container{
-  text-align: center;
-}
-.container:before{
 
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+.container {
+    text-align: center;
 }
-#bottommenu{
-  margin-top: 45px;
+
+.container:before {
+
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
-#pr1{
-  background-image: url(pr1.jpg);
-  background-size: cover;
+
+#bottommenu {
+    margin-top: 45px;
 }
-#pr2{
-  background-image: url(pr2.jpg);
-  background-size: cover;
+
+#pr1 {
+    background-image: url(pr1.jpg);
+    background-size: cover;
 }
-  #pr3{
+
+#pr2 {
+    background-image: url(pr2.jpg);
+    background-size: cover;
+}
+
+#pr3 {
     background-image: url(pr3.jpg);
     background-size: cover;
-  }
-  #pr4{
+}
+
+#pr4 {
     background-image: url(pr4.jpg);
     background-size: cover;
-  }
-  #table{
-    margin-top: 3%;
-      display: flex;
-      
-  }
-.columns{
-    
 }
-.parentinformdessert{
+
+#table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.columns {
+    padding: 15px;
+}
+
+.parentinformdessert {
     display: flex;
 }
-.dessert{
-   
+
+.dessert {
+
 }
+
 /*.columns{
 width: 300px;
 display: flex;
