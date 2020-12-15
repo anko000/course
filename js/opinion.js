@@ -11,7 +11,7 @@ async function LoadOpinions() {
     var variables = {
         opinions: xmlData.getElementsByTagName("opinion"),
         imgSource: function () {
-            return "this.getElementsByTagName('imgSource')[0].childNodes[0].nodeValue";
+            return this.getElementsByTagName('imgSource')[0].childNodes[0].nodeValue;
         },
         fullName: function () {
             return this.getElementsByTagName("fullName")[0].childNodes[0].nodeValue;

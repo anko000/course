@@ -24,4 +24,10 @@
         <city>г. Воронеж</city>
         <opinionText>Пришла посылка быстро, доставка была курьером.</opinionText>
     </opinion>
+    <opinion>
+        <imgSource>https://i.mycdn.me/image?id=862198246388&amp;plc=WEB&amp;tkn=*SlFC8-3kS9Jo7zJvZRq-7czilnI&amp;fn=sqr_288</imgSource>
+        <fullName>Марина Белова</fullName>
+        <city>г. Москва</city>
+        <opinionText>Качество товара отличное, доставка быстрая.</opinionText>
+    </opinion>
 </opinions>
