@@ -1,9 +1,9 @@
 async function LoadStores() {
-    var template = await fetch(`https://raw.githubusercontent.com/anko000/course/master/templayed/stores.template.html`, {cache: "no-cache"} )
+    var template = await fetch(`https://raw.githubusercontent.com/anko000/course/stores/templayed/stores.template.html`, {cache: "no-cache"} )
         .then(response => response.text());
 
 
-    var xmlData = await fetch(`https://raw.githubusercontent.com/anko000/course/master/templayed/stores.data`, {cache: "no-cache"})
+    var xmlData = await fetch(`https://raw.githubusercontent.com/anko000/course/stores/templayed/stores.data`, {cache: "no-cache"})
         .then(response => response.text())
         .then(text => new DOMParser().parseFromString(text, "text/xml"));
 
@@ -18,8 +18,7 @@ async function LoadStores() {
         },
     };
     //alert(templayed(template)(variables));
-
-    $("#stores").html($("#stores").innerHTML + templayed(template)(variables));
+    $("#stores").html($("#stores")[0].innerHTML + templayed(template)(variables));
 
 }
 

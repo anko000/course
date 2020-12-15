@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <stores>
     <store>
-        <imgSource>https://i.mycdn.me/image?id=862198246388&amp;plc=WEB&amp;tkn=*SlFC8-3kS9Jo7zJvZRq-7czilnI&amp;fn=sqr_288</imgSource>
-        <text>Марина Белова</text>
+        <imgSource>url(images/dizajn-konditerskoj-7.jpg)</imgSource>
+        <text>г.Минск ул. Петра Мстиславца, 11, ТЦ"Dana Mall" 3 этаж</text>
+    </store>
+    <store>
+        <imgSource>url(images/dizajn-konditerskoj-14-1136x690.jpg)</imgSource>
+        <text>г.Минск пр-т Победителей, 9, ТЦ"Galleria Minsk" 6 этаж</text>
+    </store>
+    <store>
+        <imgSource>url(images/nfdfjpaz4qdg4i3kn17y.jpg)</imgSource>
+        <text>г.Минск, Партизанский просп., 150А, ТЦ"Momo", 1 этаж</text>
     </store>
 </stores>
