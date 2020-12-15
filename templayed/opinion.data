@@ -12,4 +12,16 @@
         <city>г. Воронеж</city>
         <opinionText>Пришла посылка быстро, доставка была курьером.</opinionText>
     </opinion>
+    <opinion>
+        <imgSource>https</imgSource>
+        <fullName>Алексей Фролов</fullName>
+        <city>г. Воронеж</city>
+        <opinionText>Пришла посылка быстро, доставка была курьером.</opinionText>
+    </opinion>
+    <opinion>
+        <imgSource>https</imgSource>
+        <fullName>Алексей Фролов</fullName>
+        <city>г. Воронеж</city>
+        <opinionText>Пришла посылка быстро, доставка была курьером.</opinionText>
+    </opinion>
 </opinions>
