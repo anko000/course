@@ -109,7 +109,7 @@ body {
     border-radius: 5px;
     box-shadow: 0px 0px 10px #000;
         
-    border: #d7a574 3px solid;
+    border: #583e2b 3px solid;
 }
 
 .b-popup .b-popup-content a {
@@ -120,9 +120,9 @@ body {
 }.b-popup .i-popup-content {
     margin: 10% auto 0px auto;
     width: 500px;
-    height: 400px;
+    height: 370px;
     padding: 10px;
-    background-color: #b2b2b2;
+    background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 10px #000;
        
@@ -130,7 +130,7 @@ body {
 
 .b-popup .i-popup-content a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #5c4331;
     display: flex;
     float: right;
 }
@@ -167,101 +167,7 @@ body {
     margin-left: 7%;
 }
 
-/*.bottommenu {
-    background: #1c1c1c;
 
-    background: url(../images/NewCanvas2.png) no-repeat;
-    display: block;
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    font-family: 'Federiko';
-
-    margin: 0 auto;
-}
-
-.bottommenu ul li {
-    list-style: none;
-}
-*/
-/*.topmenu {
-    padding: 10px;
-    display: flex;
-
-}
-
-
-.menubar {
-    float: left;
-}
-
-.menubar div {
-    display: inline-block;
-}
-
-.menubar a {
-    text-decoration: none;
-    display: block;
-    position: relative;
-    line-height: 61px;
-    padding-left: 30px;
-    font-size: 22px;
-    letter-spacing: 2px;
-    font-family: 'Federiko';
-
-    color: #583e2b;
-    transition: .3s linear;
-}
-
-.menubar a:hover {
-    color: aqua;
-}
-
-.menubar a:checked {
-    color: brown;
-}
-
-@media (max-width: 660px) {
-    .menu-main {
-        float: none;
-        padding-top: 20px;
-    }
-
-    .topmenu {
-        text-align: center;
-        padding: 20px 0 0 0;
-    }
-
-    .menu-main a {
-        padding: 0 10px;
-    }
-}
-
-@media (max-width: 600px) {
-    .menu-main div {
-        display: block;
-    }
-
-    .topmenu {
-        text-align: center;
-        padding: 20px 0 0 0;
-    }
-
-    .logo a {
-        position: absolute;
-        top: 3%;
-        right: 50%;
-        left: 50%;
-    }
-
-
-
-    .menubar {
-        margin-top: 15%;
-    }
-
-}
-*/
 .i-popup-content textarea {
     width: 98%;
     height: 120px;
@@ -269,9 +175,20 @@ body {
     margin-left: 5px;
     font-family: 'Federiko';
     font-size: 16px;
+     border: #C2A67E 1px solid;
 
 }
-
+.i-popup-content #sub{
+      border: none;
+    height: 34px;
+    border-radius: 17px;
+    margin-bottom: 30px;
+    background-color: #5c4331;
+    color: white;
+    font-family: 'Federiko';
+    width: 100%;
+    margin-top: 20px;
+}
 .i-popup-content .inputtext {
     margin: 5px;
 
@@ -289,6 +206,7 @@ body {
     width: 100%;
     font-size: 16px;
     font-family: 'Federiko';
+     border: #C2A67E 1px solid;
 }
 @media(max-width:1189px) {
    .menu .contact{
