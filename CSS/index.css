@@ -379,11 +379,12 @@ body {
 .no-fontface .nav .icon-menu:before {
     display: none;
 }
-
+#pop{
+    
+}
 .menu {
     position: relative;
-    z-index: 1;
-
+   
     border: 0;
     margin: -1px auto;
     overflow: hidden;

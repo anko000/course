@@ -28,7 +28,7 @@ async function LoadOpinions() {
             return this.getElementsByTagName("informCake")[0].childNodes[0].nodeValue;
         },
     };
-    alert(templayed(template1)(variables));
+    
 $("#table").html(templayed(template1)(variables));
     $("#pop").html(templayed(template2)(variables));
 }
