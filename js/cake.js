@@ -29,7 +29,8 @@ async function LoadOpinions() {
         },
     };
     alert(templayed(template1)(variables));
-//$("#table").html();
+$("#table").html(templayed(template1)(variables));
+    $("#pop").html(templayed(template2)(variables));
 }
 
 $(document).ready(function () {
