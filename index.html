@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-    <script src="index.js" ></script>
+    <script src="index.js"></script>
+
     <script>
         $(document).ready(function() {
             //Скрыть PopUp при загрузке страницы
@@ -22,7 +23,7 @@
         });
         $(window).load(function() {
             Calc();
-           
+
 
         });
         //Функция отображения PopUp
@@ -41,9 +42,43 @@
             var heightText = $("#centerText").height();
             var margin = (containerHeight - heightText) / 2;
             $("#centerText").css("margin-top", margin);
-            $("#centerText").css("margin-bottom", margin);
+            $("#centerText").css("margin-bottom", margin);}
 
-        }
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $('#yourButtonId').click(function() {
+            $.ajax({
+                type: “POST”,
+                url: “https: \\mandrillapp.com\ api\ 1.0\ messages\ send.json”,
+                data: {
+                    ‘
+                    key’: ‘_4qFuOVvRIe4Ee4bmNFjDQ’,
+                    ‘message’: {
+                        ‘
+                        from_email’: ‘kovtiknasta1 @gmail.com’,
+                        ‘to’: [{
+                                ‘
+                                email’: ‘RECIPIENT_NO_1 @EMAIL.HERE’,
+                                ‘name’: ‘RECIPIENT NAME(OPTIONAL)’,
+                                ‘type’: ‘to’
+                            },
+                            {
+                                ‘
+                                email’: ‘RECIPIENT_NO_2 @EMAIL.HERE’,
+                                ‘name’: ‘ANOTHER RECIPIENT NAME(OPTIONAL)’,
+                                ‘type’: ‘to’
+                            }
+                        ],
+                        ‘autotext’: ‘true’,
+                        ‘subject’: ‘YOUR SUBJECT HERE!’,
+                        ‘html’: ‘YOUR EMAIL CONTENT HERE!YOU CAN USE HTML!’
+                    }
+                }
+            }).done(function(response) {
+                console.log(response); // if you're into that sorta thing
+            });
+        });
 
     </script>
 </head>
@@ -116,7 +151,7 @@
 
 
                     <textarea name="name" rows="3" placeholder="Напишите ваши пожелания" cols="20"></textarea>
-                    <input type="submit" id="submit">
+                    <input type="submit" id="">
                 </form>
             </div>
         </div>
