@@ -7,10 +7,25 @@
     <title>Products</title>
     <link rel="stylesheet" type="text/css" href="CSS\index.css">
     <link rel="stylesheet" type="text/css" href="CSS\production.css">
-    
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
     <script src="index.js"></script>
+<script>
+     $(document).ready(function() {
+            //Скрыть PopUp при загрузке страницы
+            PopUpHide();
+          
+        });
+     //Функция отображения PopUp
+        function PopUpShow() {
+            $("#popup1").show();
+        }
+        //Функция скрытия PopUp
+        function PopUpHide() {
+            $("#popup1").hide();
+        }
 
+    </script>
 </head>
 
 <body>
@@ -36,51 +51,71 @@
             <li class="menu-item">
                 <a href="opinion.html">Отзывы</a>
             </li>
+            <li class="contact">
+                Контакты:<br>
+                +375-29-555-16-22(МТС)
+                +375-29-555-16-22(Life)
+            </li>
         </ul>
     </nav>
 
     <div id="table">
         <div class="columns">
-            <a href="dessert1.html">
+            <a href="javascript:PopUpShow()">
                 <image src="images/1.jpg" width="300px" />
                 
             </a>
         </div><div class="columns">
-            <a href="dessert2.html">
+            <a href="javascript:PopUpShow()">
                 <image src="images/8.jpg" width="300px" />
             </a>
         </div><div class="columns">
-            <a href="dessert3.html">
+            <a href="javascript:PopUpShow()">
                 <image src="images/4.jpg" width="300px" />
             </a>
         </div><div class="columns">
-            <a href="dessert4.html">
+            <a href="javascript:PopUpShow()">
                 <image src="images/6.jpg" width="300px" />
             </a>
         </div><div class="columns">
-            <a href="dessert5.html">
+            <a href="javascript:PopUpShow()">
                 <image src="images/2.jpg" width="300px" />
             </a>
         </div><div class="columns">
-            <a href="dessert6.html">
+            <a href="javascript:PopUpShow()">
                 <image src="images/10.jpg" width="300px" />
             </a>
         </div><div class="columns">
-            <a href="dessert7.html">
+            <a href="javascript:PopUpShow()">
                 <image src="images/7.jpg" width="300px" />
             </a>
         </div><div class="columns">
-            <a href="dessert8.html">
+            <a href="javascript:PopUpShow()">
                 <image src="images/9.jpg" width="300px" />
             </a>
         </div><div class="columns">
-            <a href="dessert9.html">
+            <a href="javascript:PopUpShow()">
                 <image src="images/5.jpg" width="300px" />
             </a>
         </div>
 
 
     </div>
+    <div class="b-popup" id="popup1" style="display: none;  ">
+            <div class="b-popup-content">
+
+                <a href="javascript:PopUpHide()"><i class="fa fa-times" aria-hidden="true"></i></a>
+                 <div id="parentinformdessert">
+            <div class="dessert" id="imgdessert">
+                <img src="images/1.jpg" width="300px"/>
+            </div>
+            <div class="dessert" id="informdessert">
+                СОБЛАЗН – вариант для тех, кто любит сметанные торты, но ему не по вкусу шоколад. В этом торте 3 белых сметанных бисквита, каждый из которых со своим наполнением ( мак, изюм, кедровый орех) прослаиваются нежным сметано-творожным бисквитом, от которого они становятся еще нежнее и “сметаннее”. Если вы хотите исключить что-либо из этих наполнений, или заменить их, мы с удовольствием пойдем вам на встречу.
+            </div>
+            
+        </div>
+            </div>
+        </div>
 
 </body>
 

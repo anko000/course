@@ -273,7 +273,14 @@ body {
     font-size: 16px;
     font-family: 'Federiko';
 }
-
+@media(max-width:1189px) {
+   .menu .contact{
+        display: none !important;
+    }
+    .menu .contactindex{
+        display: none !important;
+    } 
+}
 @media(max-width:902px) {
     #background {
         background: none;
@@ -312,6 +319,7 @@ body {
     li.stretch {
         width: 100% !important;
     }
+    
 }
 
 
@@ -481,7 +489,22 @@ body {
         color: #9f6221;
 
     }
-
+    .menu .contact{
+        font-family: 'Federiko';
+         font-size: 1em;
+        float: right;
+        display: block;
+    padding:30px 10px;
+        width: 250px;
+    }
+.menu .contactindex{
+        font-family: 'Federiko';
+         font-size: 1em;
+        float: right;
+        display: block;
+    
+        width: 250px;
+    }
     .menu li:hover > a,
     .expanded-mobile-menu li:hover > a {}
 
