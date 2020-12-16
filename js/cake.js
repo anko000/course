@@ -1,17 +1,23 @@
 async function LoadOpinions() {
-    var template1 = await fetch(`https://raw.githubusercontent.com/anko000/course/master/templayed/cake.template.html`, {cache: "no-cache"} )
+    var template1 = await fetch(`https://raw.githubusercontent.com/anko000/course/master/templayed/cake.template.html`, {
+            cache: "no-cache"
+        })
         .then(response => response.text());
-    
-var template2 = await fetch(`https://raw.githubusercontent.com/anko000/course/master/templayed/cakeinform.template.html`, {cache: "no-cache"} )
+
+    var template2 = await fetch(`https://raw.githubusercontent.com/anko000/course/master/templayed/cakeinform.template.html`, {
+            cache: "no-cache"
+        })
         .then(response => response.text());
 
 
-    var xmlData = await fetch(`https://raw.githubusercontent.com/anko000/course/master/templayed/cake.data`, {cache: "no-cache"})
+    var xmlData = await fetch(`https://raw.githubusercontent.com/anko000/course/master/templayed/cake.data`, {
+            cache: "no-cache"
+        })
         .then(response => response.text())
         .then(text => new DOMParser().parseFromString(text, "text/xml"));
     //alert(xmlData.getElementsByTagName("cake").length);
     var variables = {
-        opinions: xmlData.getElementsByTagName("cake"),
+        cakes: xmlData.getElementsByTagName("cake"),
         id: function () {
             return this.getElementsByTagName('id')[0].childNodes[0].nodeValue;
         },
@@ -20,13 +26,13 @@ var template2 = await fetch(`https://raw.githubusercontent.com/anko000/course/ma
         },
         informCake: function () {
             return this.getElementsByTagName("informCake")[0].childNodes[0].nodeValue;
-        },};
+        },
+    };
+    alert(templayed(template1)(variables));
+//$("#table").html();
 }
 
 $(document).ready(function () {
     LoadOpinions();
- 
+
 });
-
-
-
